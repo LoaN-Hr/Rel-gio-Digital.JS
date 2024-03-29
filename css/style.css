@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+body {
+    height: 100vh;
+    background-image: linear-gradient(to left top, #c70000, #cd0e05, #d3180a, #da2010, #e02715, #e53116, #ea3b18, #ef4319, #f34f16, #f75b13, #fb6510, #ff700d);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.relogio {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 550px;
+    height: 200px;
+    background-color: transparent;
+    border-radius: 3px;
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.5);
+}
+
+.relogio div {
+    width: 150px;
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-color: rgba(5, 5, 5, 0.9);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.7);
+    border-radius: 7px;
+    letter-spacing: 0.3em;
+}
+
+.relogio span {
+    font-size: 3.6em;
+    font-weight: 500;
+}
+
+.relogio .tempo {
+    font-size: 1em;
+}
+
+.redes {
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1em;
+    margin-top: 2em;
+}
+
+.redes h1 {
+    font-size: 1.2em;
+    font-weight: 500;
+    text-transform: none;
+    text-shadow: 3px 2px 3px rgba(0, 0, 0, 0.3);
+}
+
+.redes div {
+    width: 150px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.redes a {
+    color: rgba(0, 0, 0, 0.7);
+    filter: drop-shadow(2px 2px 6px black);
+}
+
+.redes a:hover {
+    color: rgba(0, 0, 0, 1);
+    transition: 500ms;
+}
+
+
+@media screen and (max-width: 600px) {
+    .relogio {
+        width: 330px;
+        height: 120px;
+    }
+
+    .relogio div {
+        width: 90px;
+        height: 102px;
+        letter-spacing: 0.18em;
+    }
+
+    .relogio span {
+        font-size: 2.6em;
+    }
+
+    .relogio .tempo {
+        font-size: 0.6em;
+    }
+    
+    .redes h1 {
+        font-size: 1em;
+    }
+
+}
